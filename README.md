@@ -3,12 +3,12 @@ Today, you're working as a Tier 1 SOC Analyst. Your job is to investigate a susp
 
 > ### 🛡️ CASE SOC-2026-001
 >
-> ||Status:|| Open  
-> ||Investigation:|| Under Investigation  
-> ||Incident:|| Suspicious Invoice Email  
-> ||Alert Source:|| Email Security Gateway  
-> ||Severity:|| Medium  
-> ||Reported By:|| Employee (Finance)
+> |Status:| Open  
+> |Investigation:| Under Investigation  
+> |Incident:| Suspicious Invoice Email  
+> |Alert Source:| Email Security Gateway  
+> |Severity:| Medium  
+> |Reported By:| Employee (Finance)
 
 
 ### 1. Incident scenario
