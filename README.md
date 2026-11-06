@@ -56,3 +56,17 @@ RESULT: UNKNOWN
 EVENT: SPAM_FILTER
 RESULT: DELIVERED
 REASON: No known malicious signature detected
+
+### 4. Additional indicators
+Indicator	Value
+Sender domain	acme-payments-secure.com
+Attachment	ZIP archive
+URL reputation	Unknown
+Email urgency	High
+Expected invoice	Not confirmed
+
+### A few terms to remember:
+> IOC: Indicator of Compromise, such as a suspicious domain or file hash.
+> URL reputation: A service's assessment of whether a web address is known to be malicious.
+> False positive: A legitimate activity incorrectly flagged as suspicious.
+> Phishing: A deceptive attempt to trick someone into revealing information or executing malicious content.
