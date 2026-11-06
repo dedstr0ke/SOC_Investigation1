@@ -374,3 +374,153 @@ It means there is currently **insufficient evidence** to confirm malicious activ
 > ⚠️ Avoid assumptions not supported by logs or artifacts
 >
 > **Recommended Next Step:** Continue practicing investigations while focusing on evidence integrity and confidence-based reporting.
+
+
+# 📄 Model Investigation Report
+
+> [!IMPORTANT]
+> ### SOC INCIDENT REPORT
+>
+> **Status:** Pending Investigation  
+> **Case ID:** SOC-2026-001  
+> **Incident Type:** Suspicious Invoice Email  
+> **Analyst:** Tier 1 SOC Analyst
+
+---
+
+## 📋 Incident Summary
+
+An employee from the Finance department reported an unexpected invoice email requesting immediate payment.
+
+The email contained:
+
+- A ZIP attachment
+- A URL with unknown reputation
+
+---
+
+## 🔍 Initial Indicators
+
+| Indicator | Value |
+|------------|---------|
+| Sender | `billing@acme-payments-secure.com` |
+| Attachment | `Invoice_1048.zip` |
+| URL | `hxxps://acme-payments-secure.com/invoice` |
+| Received | 6 November 2026, 09:37:21 |
+| Reported | 09:42 AM |
+
+---
+
+## ⚠️ Initial Assessment
+
+The email displays several suspicious characteristics:
+
+- Unexpected payment request
+- Urgent language designed to pressure the recipient
+- Unverified sender domain
+- Uninspected ZIP attachment
+
+Based on the available evidence, the email **cannot yet be conclusively classified as malicious.**
+
+---
+
+## 🛠️ Recommended Investigation
+
+1. Inspect email headers and authentication results (SPF, DKIM, DMARC).
+2. Calculate the attachment's SHA-256 hash and investigate its reputation.
+3. Analyze the URL using approved threat intelligence tools.
+4. Determine whether the recipient opened or executed the attachment.
+5. Search SIEM and endpoint logs for related activity.
+
+---
+
+## 🚨 Recommended Response
+
+- Quarantine the email.
+- Preserve all available evidence.
+- Check whether other users received the same message.
+- Investigate any interaction with the attachment.
+- Escalate suspicious execution activity or signs of compromise.
+
+---
+
+## 📌 Final Disposition
+
+> **Pending Further Investigation**
+>
+> Assessment based on currently available evidence.
+
+---
+
+# 🎯 Three Things to Remember
+
+> [!TIP]
+> These are important habits to develop before entering a real SOC environment.
+
+### 1️⃣ Don't Confuse Suspicion With Confirmation
+
+A suspicious email is **not automatically** a confirmed phishing incident.
+
+Always gather evidence before making a determination.
+
+---
+
+### 2️⃣ Think Beyond the Initial Alert
+
+An email alert is only the starting point.
+
+Ask yourself:
+
+- Did the user click?
+- Did a process execute?
+- Was there a network connection?
+- Did any suspicious activity occur afterward?
+
+---
+
+### 3️⃣ Document What You Know
+
+Document facts, not assumptions.
+
+✅ Good examples:
+
+```text
+Hash not yet obtained.
+```
+
+```text
+User interaction not confirmed.
+```
+
+Professional incident documentation clearly distinguishes between known facts and unknown information.
+
+---
+
+# 📚 Next Learning Priorities
+
+| Priority | Topic | Why It Matters |
+|-----------|-----------|-----------|
+| 1 | Email Headers (SPF, DKIM, DMARC) | Improve phishing investigations |
+| 2 | SHA-256 & File Analysis | Learn malware identification techniques |
+| 3 | Windows Event Logs | Understand post-execution activity |
+| 4 | SIEM Queries | Correlate suspicious events |
+| 5 | Incident Response | Learn containment and escalation procedures |
+
+---
+
+# 🏆 Team Lead's Final Assessment
+
+> [!NOTE]
+> **Final Score: 68/100**
+>
+> ✅ Good starting understanding of phishing investigations
+>
+> ✅ Strong awareness of investigation tools
+>
+> ✅ Good understanding of potential business impact
+>
+> ⚠️ Continue improving evidence-based reasoning
+>
+> ⚠️ Ensure conclusions remain proportional to available evidence
+>
+> **Recommendation:** Continue performing practical investigations and documenting findings. Real-world investigation practice will accelerate your growth more effectively than focusing solely on theory.
