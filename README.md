@@ -71,3 +71,28 @@ Expected invoice	Not confirmed
 > - **URL Reputation:** A service's assessment of whether a web address is known to be safe or malicious.
 > - **False Positive:** A legitimate activity that is incorrectly flagged as suspicious.
 > - **Phishing:** A deceptive attempt to trick a user into revealing information or interacting with malicious content.
+
+> ### Your Investigation Tasks
+>
+> Imagine you're working as a SOC Analyst. Don't rush to declare the email malicious simply because it appears suspicious. Review the evidence and answer the following questions:
+>
+> 1. **What are the suspicious indicators in this email?**
+>    - Identify at least **three** indicators.
+>
+> 2. **Is the email definitely malicious?**
+>    - Explain what evidence supports your conclusion.
+>    - Describe what information is still missing.
+>
+> 3. **What would you investigate next?**
+>    - List the tools, logs, or additional checks you would perform.
+>
+> 4. **What is the potential risk?**
+>    - What could happen if the employee opens the attachment?
+>
+> 5. **What actions would you recommend?**
+>    - Consider containment, investigation, and escalation steps.
+>
+> 6. **What is your current verdict?**
+>    - ☐ Legitimate Email
+>    - ☐ Suspicious – Needs Further Investigation
+>    - ☐ Confirmed Phishing
