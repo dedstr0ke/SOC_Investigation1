@@ -543,11 +543,11 @@ Don't immediately shut down the computer.
 
 If your organization has an EDR solution, use its network-isolation functionality according to incident response procedures. This can preserve the machine's state for investigation.
 
-> ** What I would Expect from a Tier 1 SOC Analyst
-> ** 1. Isolate the endpoint
+> ## What I would Expect from a Tier 1 SOC Analyst
+> ## 1. Isolate the endpoint
 > - Use EDR to isolate the affected computer, following company authorization procedures. Escalate immediately if you lack permission.
-> ** 2. Preserve Evidence and Escalate
+> ## 2. Preserve Evidence and Escalate
 > - Record the hostname, username, timestamp, file name and alert details. Notify Tier 2 / Incident Response.
-> ** 3. Investigate Endpoint Activity
+> ## 3. Investigate Endpoint Activity
 >   - Check process execution, parent-child processes, network connections and Windows Event Logs. Look for suspicious PowerShell activity and persistence.
 
