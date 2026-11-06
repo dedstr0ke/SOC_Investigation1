@@ -11,7 +11,7 @@ Today, you're working as a Tier 1 SOC Analyst. Your job is to investigate a susp
 > **Reported By:** Employee (Finance)
 
 
-### Incident scenario
+### 1. Incident scenario
 At 09:42 AM, an employee from the Finance department reports receiving an unexpected email claiming to contain an outstanding invoice.
 
 The employee says:
@@ -21,7 +21,7 @@ The employee has not confirmed whether they opened the attachment.
 
 Your SOC team has assigned this alert to you.
 
-> ### 📧 Email Details
+### 2. Email Details
 >
 > | Field | Value |
 > |--------|--------|
@@ -33,4 +33,26 @@ Your SOC team has assigned this alert to you.
 > | Attachment | Invoice_2026_001.pdf |
 > | Message Type | External Email |
 
+### 3. Email security gateway logs
+The following are fictional training logs created for this investigation.
 
+2026-11-06 09:37:21
+EVENT: INBOUND_EMAIL_RECEIVED
+SENDER: billing@acme-payments-secure.com
+RECIPIENT: employee@company.com
+
+2026-11-06 09:37:22
+EVENT: ATTACHMENT_SCANNED
+FILENAME: Invoice_1048.zip
+FILETYPE: application/zip
+SIZE: 245 KB
+
+2026-11-06 09:37:23
+EVENT: URL_REPUTATION_CHECK
+URL: hxxps://acme-payments-secure.com/invoice
+RESULT: UNKNOWN
+
+2026-11-06 09:37:24
+EVENT: SPAM_FILTER
+RESULT: DELIVERED
+REASON: No known malicious signature detected
