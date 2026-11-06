@@ -10,6 +10,7 @@ Today, you're working as a Tier 1 SOC Analyst. Your job is to investigate a susp
 > **Severity:** Medium  
 > **Reported By:** Employee (Finance)
 
+
 1. Incident scenario
 At 09:42 AM, an employee from the Finance department reports receiving an unexpected email claiming to contain an outstanding invoice.
 
