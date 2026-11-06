@@ -524,3 +524,30 @@ Professional incident documentation clearly distinguishes between known facts an
 > ⚠️ Ensure conclusions remain proportional to available evidence
 >
 > **Recommendation:** Continue performing practical investigations and documenting findings. Real-world investigation practice will accelerate your growth more effectively than focusing solely on theory.
+
+### Extra
+Suppose the employee tells you they already opened Invoice_1048.zip and double-clicked a file called Invoice.exe.
+
+I would flag the that employee's computer and block it from the company's network first.
+
+This is called endpoint isolation.
+
+If the employee executed a potentially malicious Invoice.exe, isolating the endpoint can help prevent:
+- Malware communicating with its command-and-control (C2) server.
+- Credential theft and unauthorized access.
+- Lateral movement to other company computers.
+- Further malicious activity across the network.
+However, there's an important distinction.
+
+Don't immediately shut down the computer.
+
+If your organization has an EDR solution, use its network-isolation functionality according to incident response procedures. This can preserve the machine's state for investigation.
+
+> ** What I would Expect from a Tier 1 SOC Analyst
+> ** 1. Isolate the endpoint
+> - Use EDR to isolate the affected computer, following company authorization procedures. Escalate immediately if you lack permission.
+> ** 2. Preserve Evidence and Escalate
+> - Record the hostname, username, timestamp, file name and alert details. Notify Tier 2 / Incident Response.
+> ** 3. Investigate Endpoint Activity
+>   - Check process execution, parent-child processes, network connections and Windows Event Logs. Look for suspicious PowerShell activity and persistence.
+
