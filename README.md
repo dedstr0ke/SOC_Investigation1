@@ -20,3 +20,17 @@ The employee says:
 The employee has not confirmed whether they opened the attachment.
 
 Your SOC team has assigned this alert to you.
+
+> ### 📧 Email Details
+>
+> | Field | Value |
+> |--------|--------|
+> | Subject | Invoice Payment Reminder - Due Today |
+> | Sender | accounts@finance-payments.com |
+> | Recipient | finance.employee@company.com |
+> | Date Received | 2026-01-15 09:42 UTC |
+> | Reply-To | billing@secure-payment.net |
+> | Attachment | Invoice_2026_001.pdf |
+> | Message Type | External Email |
+
+
