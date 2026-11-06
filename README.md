@@ -65,12 +65,9 @@ URL reputation	Unknown
 Email urgency	High
 Expected invoice	Not confirmed
 
-> ### A few terms to remember:
-> **IOC:** 
-Indicator of Compromise, such as a suspicious domain or file hash.
-> **URL reputation:** 
-A service's assessment of whether a web address is known to be malicious.
-> **False positive:** 
-A legitimate activity incorrectly flagged as suspicious.
-> **Phishing:** 
-A deceptive attempt to trick someone into revealing information or executing malicious content.
+> ### A Few Terms to Remember
+>
+> - **IOC (Indicator of Compromise):** A suspicious artifact such as a malicious domain, IP address, or file hash.
+> - **URL Reputation:** A service's assessment of whether a web address is known to be safe or malicious.
+> - **False Positive:** A legitimate activity that is incorrectly flagged as suspicious.
+> - **Phishing:** A deceptive attempt to trick a user into revealing information or interacting with malicious content.
