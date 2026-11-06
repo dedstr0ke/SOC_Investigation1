@@ -9,4 +9,13 @@ Today, you're working as a Tier 1 SOC Analyst. Your job is to investigate a susp
 > **Alert Source:** Email Security Gateway  
 > **Severity:** Medium  
 > **Reported By:** Employee (Finance)
-> 
+
+1. Incident scenario
+At 09:42 AM, an employee from the Finance department reports receiving an unexpected email claiming to contain an outstanding invoice.
+
+The employee says:
+"I wasn't expecting an invoice from this company. The email says payment is overdue and asks me to download the attached document."
+
+The employee has not confirmed whether they opened the attachment.
+
+Your SOC team has assigned this alert to you.
