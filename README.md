@@ -72,7 +72,7 @@ Expected invoice	Not confirmed
 > - **False Positive:** A legitimate activity that is incorrectly flagged as suspicious.
 > - **Phishing:** A deceptive attempt to trick a user into revealing information or interacting with malicious content.
 
-> ### Your Investigation Tasks
+### 5. Your Investigation Tasks
 >
 > Imagine you're working as a SOC Analyst. Don't rush to declare the email malicious simply because it appears suspicious. Review the evidence and answer the following questions:
 >
